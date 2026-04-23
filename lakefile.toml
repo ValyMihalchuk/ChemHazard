@@ -4,7 +4,3 @@ defaultTargets = ["chemhazard"]
 
 [[lean_lib]]
 name = "ChemHazard"
-
-[[lean_exe]]
-name = "chemhazard"
-root = "Main"
