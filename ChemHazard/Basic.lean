@@ -48,8 +48,7 @@ structure Substance where
 abbrev Vessel := Nat
 abbrev Mixture := List Substance
 
-def Mixture.hasClass (m : Mixture) (c : HClass) : Bool :=
-  m.any (fun s => decide (s.hclass = c))
+def Mixture.hasClass (m : Mixture) (c : HClass) : Bool := m.any (fun s => decide (s.hclass = c))
 
 def Mixture.hasClassAtLeast (m : Mixture) (c : HClass) (threshold : Conc) : Bool :=
   m.any (fun s => decide (s.hclass = c) && Conc.le threshold s.conc)
