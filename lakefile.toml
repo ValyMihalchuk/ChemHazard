@@ -3,4 +3,4 @@ version = "0.1.0"
 defaultTargets = ["ChemHazard"]
 
 [[lean_lib]]
-name = "ChemHazard"
+name = "ChemHazard" 
